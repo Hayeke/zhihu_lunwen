@@ -1,0 +1,455 @@
+---
+title: "R Notebook"
+output:
+  html_document: default
+  html_notebook: default
+---
+#问题数据探索
+
+##Link the Database
+
+where topic_name = '魅族科技'
+
+```{r}
+library(DBI)
+library(stm)
+library(lubridate)
+library(ggplot2)
+conn <- DBI::dbConnect(RSQLite::SQLite(),dbname='C:\\Data\\OneDrive\\Pythonspace\\zhihu_new\\zhihu.db')
+questioninfo<-dbGetQuery(conn,"select * from Questions_ETL ")
+head(questioninfo,5)
+```
+
+```{r}
+answerinfo<-dbGetQuery(conn,"select * from answerinfo")
+head(answerinfo)
+```
+
+
+#STM模型分析
+待做：
+停用词需要加强
+
+
+参数说明：
+new_words<-c("iphone5s","小米2s","iphone5","iphone","米吹","花吹","果吹","ov吹",
+             "有哪些","如何评价","为什么","怎么选","有什么","怎么评价","怎样",
+             "如何","怎样的","如何阻止","如何解决","魅族","mxpro","是什么","有没有","是否","能否",
+             "为何","如何看待","如何使用","ios黑","在哪里","Ascend P8","Mate 8","facebook","黄章")
+
+```{r}
+library(chinese.misc)
+library(tm)
+library(jiebaR)
+mixseg<-worker()#jieba分词器
+new_user_word(mixseg,scan("dictionary.txt",what="",sep="\n"))
+
+question_dtm<-corp_or_dtm(questioninfo$question_title,from = "v",mycutter = mixseg,type="DTM",stop_word="jiebar",control=list(wordLengths=c(2, 100)))
+m<-output_dtm(question_dtm)
+
+```
+
+*降维
+```{r}
+#length(question_dtm$dimnames$Terms)#
+question_dtm_removed<-removeSparseTerms(question_dtm,0.999)
+question_dtm_removed$dimnames$Terms
+```
+
+
+*统计词频
+```{r}
+sort_tf (
+	question_dtm, 
+	top = 20, 
+	type = "dtm", 
+	todf = FALSE, 
+	must_exact = FALSE
+)
+```
+
+
+##相似单词查找
+华为相关系数大于0.1
+```{r}
+#findAssocs(question_dtm,"华为",0.1)  
+#findAssocs(question_dtm,"小米",0.09)  
+findAssocs(question_dtm,"魅族",0.085)  
+#findAssocs(question_dtm,"苹果",0.145) 
+```
+
+##文本聚类
+
+```{r}
+library(proxy)
+mydata <- as.data.frame(inspect(t(question_dtm)))    #转换分析数据为数据框结构
+mydata.scale<-scale(mydata)                        #
+d<-dist(mydata.scale,method="euclidean")        
+fit <- hclust(d, method="ward.D2")                #聚类分析
+plot(fit) 
+```
+
+
+计算两个单词在多少文章中共同出现
+```{r, eval=FALSE, include=FALSE}
+ttm<-create_ttm(question_dtm,type = "dtm",tomatrix = FALSE, checks = TRUE)
+ttm_sparse=ttm[[1]]
+ttm_ordinary=as.matrix(ttm_sparse)
+ttm_word=ttm[[2]]
+ttm_word
+```
+
+
+
+
+**DTM矩阵做降维
+
+可参考：http://blog.sina.com.cn/s/blog_54f07aba0102vfsw.html
+
+
+
+###查看词语相关性
+不同系数解释。
+这个函数与tm包中的findAssocs计算的差不多，但是更为灵活。第一，findAssocs只能计算pearson系数。但是对于像词频这种极少呈正态分布的数据来说，更适合用等级相关系数，因此word_cor可以让你指定是用pearson，还是spearman还是kendall。默认是kendall。第二，这个函数直接把相关系数表及P值给出来，这更符合我们平时做研究的需要。第三，这个函数允许通过系数限制和P值限制显示。
+
+```{r}
+word_cor(
+	question_dtm,  #DTM/TDM，或matrix
+	word = c("小米","华为","魅族","苹果"),  #你要查询相关性的词，每次最多30个
+	type = "dtm", #如果x是matrix，用来指明它代表dtm还是tdm，分别用以”D/d“开头的或以”T/t“开头的就行了
+	method = "kendall",  #何种系数，kendall, spearman, pearson
+	p = NULL, #设一个p值，只有当一个相关系数的p值小于此值时，系数才会显示，否则会是NA
+	min = NULL #设一个最小的系数值，只有大于等于此值的系数才会被显示，否则是NA
+	)
+```
+
+##对问题中一类词语的词频的关注。
+
+对字典中一个类别的全部词语感兴趣。比如，我们可能对”大数据“、”云计算“、”人工智能“等很多词语的数量总和感兴趣，对”创业”、“创新”、“人才”、“改革”等词语的总和感兴趣。
+
+###构建字典
+```{r}
+mydict<-list(
+  #Value_Opions<-c("如何评价","怎么评价"),
+  #Fact_Opions<-c("是不是","在哪里","怎样"),
+  APPle_Products<-c("iphone 4","ios","ipad","Mac","MacBook"),
+  Huawei_Products<-c("荣耀","EMUI","Ascend P8","Mate 8","mate S","畅享","麒麟"),
+  Xiaomi_Products<-c("小米Mix","松果"),
+  Meizu_Products<-c("魅蓝","M9")
+  #Peoples<-c("雷军","乔布斯","黄章","余承东","周鸿祎"),
+  #Companys<-c("facebook","google")
+  )
+
+```
+
+```{r}
+question_dtm2<-dictionary_dtm(question_dtm,dictionary = mydict,type = "dtm")
+```
+
+```{r}
+#word_cor(question_dtm,word = c("小米","华为","魅族","苹果"), type = "dtm", method = "kendall",p = NULL,min = NULL)
+
+sort_tf (question_dtm2, top = 20, type = "dtm", todf = FALSE, must_exact = FALSE)
+
+```
+
+
+
+##话题随时间趋势
+
+```{r}
+questioninfo<-dbGetQuery(conn,"select * from Questions_ETL")
+class(questioninfo$created_time) = "POSIXct"
+questioninfo$created_time<-as.Date(format(questioninfo$created_time,format="%Y-%m-%d"))
+
+```
+
+
+这个函数的应用场景是，你用各种算法已经确定了第个文本的话题，同时也知道这个文本出现的哪一年，于是想算不同的话题在这些年的变化趋势。这个函数本质上就是lm( )一下而已，反映的只是大体上的增减趋势。若用绝对数据，即默认的relative=FALSE，就是拿每年的数量直接计算；如果是相对数据，就是先拿这一年这个话题的数量除以全年文章总和，用这个百分比计算。year参数要求至少要有三个时间点，比如2014:2016，仅两个是不行的。 zero的值只能是NA或0。但是如果relative为TRUE的话，那么会直接将所有NA都看成0来计算。 返回结果是一个列表，依次是趋势数据，历年话题的数量汇总，以及历年话题的百分比汇总（如果relative=TRUE）
+
+
+```{r}
+
+year=year(questioninfo$created_time)
+topic=questioninfo$topic_name
+topic_trend(year, topic,relative = FALSE)
+```
+
+###查看问题中的词性分布特征。
+
+小米话题的动词
+```{r}
+library(wordcloud2)
+library(stringr)
+questioninfo<-dbGetQuery(conn,"select * from Questions_ETL where topic_name = '小米科技' ")
+titles<-as.list(questioninfo$question_title)
+tag_word<-get_tag_word(titles, tag = c("n"), tag_pattern = NULL, mycutter = mixseg,type = "word", each = FALSE,only_unique = FALSE, keep_name = FALSE,checks = TRUE)
+#table(tag_word)#
+tag_word<-gsub("小米|是|会|做|有|要|到|没有|发布|使用","",tag_word)
+wordcloud2(table(tag_word),size = 15)
+```
+华为
+
+```{r}
+questioninfo<-dbGetQuery(conn,"select * from Questions_ETL where topic_name = '华为' ")
+titles<-as.list(questioninfo$question_title)
+tag_word<-get_tag_word(titles, tag = c("n"), tag_pattern = NULL, mycutter = mixseg,type = "word", each = FALSE,only_unique = FALSE, keep_name = FALSE,checks = TRUE)
+#table(tag_word)#
+tag_word<-gsub("华为|是|会|做|有|要|到|没有|发布|使用","",tag_word)
+wordcloud2(table(tag_word),size = 5)
+```
+
+Apple
+```{r}
+questioninfo<-dbGetQuery(conn,"select * from Questions_ETL where topic_name = '苹果公司 (Apple Inc.)' ")
+titles<-as.list(questioninfo$question_title)
+tag_word<-get_tag_word(titles, tag = c("n"), tag_pattern = NULL, mycutter = mixseg,type = "word", each = FALSE,only_unique = FALSE, keep_name = FALSE,checks = TRUE)
+#table(tag_word)#
+tag_word<-gsub("苹果公司|是|会|做|有|要|到|没有|发布|使用","",tag_word)
+wordcloud2(table(tag_word),size = 5)
+```
+
+
+
+```{r}
+questioninfo<-dbGetQuery(conn,"select * from Questions_ETL where topic_name = '魅族科技' ")
+titles<-as.list(questioninfo$question_title)
+tag_word<-get_tag_word(titles, tag = c("n"), mycutter = mixseg,type = "word", each = FALSE,only_unique = FALSE, keep_name = FALSE,checks = TRUE)
+#table(tag_word)#
+tag_word<-gsub("魅族科技|是|会|做|有|要|到|没有|发布|使用","",tag_word)
+wordcloud2(table(tag_word),size = 6)
+```
+
+
+
+
+
+
+```{r}
+library(DBI)
+conn <- DBI::dbConnect(RSQLite::SQLite(),dbname='C:\\Data\\OneDrive\\Pythonspace\\zhihu_new\\zhihu.db')
+sherlock<-dbGetQuery(conn,"select question_title,topic_name  from Questions_ETL  ")
+sherlock$topic_name<-as.factor(sherlock$topic_name)
+
+```
+
+```{r}
+library(tidytext)
+
+tidy_sherlock <- sherlock %>%
+    mutate(line = row_number()) %>%
+    unnest_tokens(word, question_title) 
+
+tidy_sherlock %>%
+    count(word, sort = TRUE)
+
+```
+
+```{r}
+library(chinese.misc)
+library(tm)
+library(jiebaR)
+mixseg<-worker()#jieba分词器
+new_user_word(mixseg,scan("dictionary.txt",what="",sep="\n"))
+
+sherlock_dtm<-corp_or_dtm(sherlock$question_title,from = "v",mycutter = mixseg,type="DTM",stop_word="jiebar",control=list(wordLengths=c(2, 100)))
+```
+
+```{r}
+tidy_sherlock_count<-sort_tf (
+	sherlock_dtm, 
+	type = "dtm", 
+	todf = TRUE, 
+	top = 4073,
+	must_exact = TRUE
+)
+```
+
+
+```{r}
+library(drlib)
+library(dplyr)
+library(ggplot2)
+#library(devtools)
+#install_github('dgrtwo/drlib')
+
+sherlock_tf_idf <- tidy_sherlock %>%
+    count(topic_name, word, sort = TRUE) %>%
+    bind_tf_idf(word, topic_name, n) %>%
+    arrange(-tf_idf) %>%
+    group_by(topic_name) %>%
+    top_n(10) %>%
+    ungroup
+
+sherlock_tf_idf %>%
+    mutate(word = reorder_within(word, tf_idf, topic_name)) %>%
+    ggplot(aes(word, tf_idf, fill = topic_name)) +
+    geom_col(alpha = 0.8, show.legend = FALSE) +
+    facet_wrap(~ topic_name, scales = "free", ncol = 2) +
+    scale_x_reordered() +
+    coord_flip() +
+    theme(strip.text=element_text(size=11)) +
+    labs(x = NULL, y = "tf-idf",
+         title = "Highest tf-idf words in Sherlock Holmes short stories",
+         subtitle = "Individual stories focus on different characters and narrative elements")
+```
+
+#STM模型文本分析
+
+```{r}
+library(DBI)
+conn <- DBI::dbConnect(RSQLite::SQLite(),dbname='C:\\Data\\OneDrive\\Pythonspace\\zhihu_new\\zhihu.db')
+questioninfo<-dbGetQuery(conn,"select * from Questions_ETL where topic_name = '魅族科技' ")
+class(questioninfo$created_time) = "POSIXct"
+questioninfo$created_time<-as.Date(format(questioninfo$created_time,format="%Y-%m-%d"))
+
+```
+
+```{r}
+library(chinese.misc)
+library(tm)
+library(jiebaR)
+
+mixseg<-worker()#jieba分词器
+new_user_word(mixseg,scan("dictionary.txt",what="",sep="\n"))
+stop_words<-c("到底","实际","那么","用户","什么","各个","设置","以上","不要","才能","出于","对于","一直","还是","一样","一种","现在","他们","怎么","已经","引入","系列","以前","真正","继续","真的")
+
+question_dtm<-corp_or_dtm(questioninfo$question_title,from = "v",mycutter = mixseg,type="DTM",stop_word=stop_words,control=list(wordLengths=c(2, 100)))
+m<-output_dtm(question_dtm)
+```
+
+```{r}
+library(stm)
+processed<-readCorpus(question_dtm,type = "slam")
+data.que_type <-as.factor(questioninfo$que_type)
+
+out<-prepDocuments(processed$documents,processed$vocab,data.que_type)
+#out<-prepDocuments(processed$documents,processed$vocab,processed$meta)
+
+data.docs<-out$documents
+data.vacab<-out$vocab
+data.que_type<-out$meta
+#data.meta<-out$meta
+```
+
+
+```{r}
+dbselect<-selectModel(data.docs,data.vacab,K = 8,content = ~data.que_type,runs = 20,seed=666)
+plotModels(dbselect)
+```
+
+Another way to choose the best K
+```{r}
+#storage <- searchK(data.docs, data.vacab, K = c(5, 10),prevalence = ~data.que_type)
+storage <- searchK(data.docs, data.vacab, K = c(5, 15),content = ~data.que_type)
+plot(storage)
+```
+
+主题强度
+```{r}
+#data.created_time <-as.factor(questioninfo$created_time)
+dbprefit<-stm(data.docs,data.vacab,K = 6,prevalence = ~data.que_type,seed = 666)
+```
+
+
+
+```{r}
+library(dplyr)
+library(stm)
+library(tidyverse)
+library(tidytext)
+library(drlib)
+td_beta <- tidy(dbprefit)
+td_beta %>%
+    group_by(topic) %>%
+    top_n(10, beta) %>%
+    ungroup() %>%
+    mutate(topic = paste0("Topic ", topic),
+           term = reorder_within(term, beta, topic)) %>%
+    ggplot(aes(term, beta, fill = as.factor(topic))) +
+    geom_col(alpha = 0.8, show.legend = FALSE) +
+    facet_wrap(~ topic, scales = "free_y") +
+    coord_flip() +
+    scale_x_reordered() +
+    labs(x = NULL, y = expression(beta),
+         title = "Highest word probabilities for each topic",
+         subtitle = "Different words are associated with different topics")
+```
+
+
+```{r}
+dbprefit<-stm(data.docs,data.vacab,K = 4,content = ~data.que_type,seed = 666)
+```
+
+
+
+
+##待做，增加停用词，并将去除停用词的工作补充到论文中。
+
+
+
+
+```{r}
+labelTopics(dbprefit,topics = c(1:4))
+```
+
+```{r}
+pre<-estimateEffect(1:6~data.que_type,dbprefit)
+
+plot.estimateEffect(pre,"data.que_type",model = "dbprefit",
+                    method = "pointestimate" )
+
+```
+
+```{r}
+plot.estimateEffect(pre,"data.que_type",model = "dbprefit",
+                    cov.value1 = "潜在点",cov.value2 = "舆论焦点",
+                    xlim=c(-0.12,0.1),
+                    method = "difference",xlab="潜在点---舆论焦点",printlegend=FALSE,
+                    main=" 偏好差异-潜在点型 VS 舆论焦点型")
+```
+
+```{r}
+ prep <- estimateEffect(1:6 ~ data.que_type, dbprefit, uncertainty = "Global")
+
+plot(prep, covariate = "data.que_type", topics = c(1, 2, 3),model = dbprefit, method = "difference",cov.value1 = "潜在点", cov.value2 = "舆论焦点", xlab = "More Conservative ... More Liberal",main = "Effect of Liberal vs. Conservative",xlim = c(-.1, .1), labeltype = "custom",custom.labels = c('Obama', 'Sarah Palin','Bush Presidency'))
+
+
+```
+
+```{r}
+thoughts1 <- findThoughts(dbprefit, texts = questioninfo$question_title,n = 5, topics = 1)$docs[[1]]
+thoughts2 <- findThoughts(dbprefit, texts = questioninfo$question_title, n = 5, topics = 2)$docs[[1]]
+thoughts3 <- findThoughts(dbprefit, texts = questioninfo$question_title, n = 5, topics = 3)$docs[[1]]
+par(mfrow = c(1, 3),mar = c(.5, .5, 1, .5))
+plotQuote(thoughts1, width = 30, main = "Topic 1")
+plotQuote(thoughts2, width = 30, main = "Topic 2")
+plotQuote(thoughts3, width = 30, main = "Topic 3")
+
+```
+
+```{r}
+cormat<-topicCorr(dbprefit)
+plot(cormat)
+#plot.STM(dbprefit,type="summary")
+```
+
+```{r}
+plot.STM(dbprefit,type="labels",topics = 1:6)
+```
+```{r}
+cloud(dbprefit, topic = 3, scale = c(5,1))
+
+
+
+```
+
+```{r}
+plot.STM(dbprefit,type="perspectives",topics = 1:2)
+```
+
+
+
+
+
+

@@ -1,0 +1,148 @@
+---
+title: "R Notebook"
+output: html_notebook
+---
+一些数据变形与预处理
+```{r}
+library(DBI)
+library(lubridate)
+library(ggplot2)
+library(reshape2)
+conn <- DBI::dbConnect(RSQLite::SQLite(),dbname='C:\\Data\\OneDrive\\Pythonspace\\zhihu_new\\zhihu.db')
+
+```
+
+create new table --userinfo_reshape 
+```{r}
+userinfo<-dbGetQuery(conn,"select id,name, answer_count,question_count ,voteup_count ,thanked_count  ,following_count,follower_count,following_question_count,following_topic_count,collected_count from userinfo")
+userinfo_reshape<-melt(userinfo,id.vars = c("id","name"),variable.name = "type",value.name = "value")
+dbWriteTable(conn,"userinfo_reshape",userinfo_reshape)
+```
+
+
+分析话题用户回答数据特征
+
+```{r}
+userinfo<-dbGetQuery(conn,"select tu.topic_name,ur.id,ur.name,ur.type,ur.value from userinfo_reshape as ur,topic_users as tu where tu.user_id = ur.id")
+dbDisconnect()
+```
+
+```{r}
+library(dplyr)
+temp<-userinfo%>%
+  group_by(topic_name,type)%>%
+  summarise(values = sum(value))%>%
+  filter(topic_name %in% c("华为","小米科技","苹果公司 (Apple Inc.)","魅族科技"))
+```
+
+
+
+```{r}
+ggplot(temp,aes(type,log(values),group = topic_name,color=topic_name))+geom_line()+coord_polar(theta = "x")
+
+```
+以下为无效雷达
+```{r}
+library("ggradar")
+temp2<-acast(temp,topic_name~type,sum)
+name<-c("1","2","3","4")
+temp2<-data.frame(name,temp2)
+temp3<-temp2[,1:5]
+ggradar(temp3)
+```
+
+#特征累计分布计算
+
+```{r}
+
+library(DBI)
+library(lubridate)
+library(ggplot2)
+library(reshape2)
+conn <- DBI::dbConnect(RSQLite::SQLite(),dbname='C:\\Data\\OneDrive\\Pythonspace\\zhihu_new\\zhihu.db')
+userinfo<-dbGetQuery(conn,"select *  from usertopics_bytopic")
+```
+```{r}
+data<-userinfo["follower_count"][,1]
+res_cdf=ecdf(data)
+plot(res_cdf,main=paste('CDF of'))
+
+```
+
+```{r}
+showCDF<-function(data,field){
+  res_cdf=ecdf(data)
+  #res_cdf=kCDF(data)
+  plot(res_cdf,main=paste('CDF of',field),xlim=c(0,200),verticals=TRUE)
+
+  #显示中位数、上四分位，最大值，以及最大值的2倍(视情况,可以去掉)
+  summaryData=boxplot.stats(data)$stats
+  #summaryData[6]=summaryData[5]*2
+
+  for(index in 2:length(summaryData)){
+    tempV=as.numeric(summaryData[index])
+    R_value=floor(res_cdf(tempV)*10000)/100
+    lines(c(tempV,tempV),c(R_value/100,0),col='red',lwd=2,lty=3)
+    label=paste('<-',floor(tempV*100)/100,':',R_value,'%',sep='')
+    text(tempV,index*0.15,label,cex=0.8,adj=c(0,1))
+  }
+  return(res_cdf)
+
+}
+```
+
+
+
+```{r}
+huawei_userinfo<-dbGetQuery(conn,"select *  from usertopics_bytopic where topic_name = '华为'")
+data<-huawei_userinfo["follower_count"][,1]
+showCDF(data,"华为关注用户话题关注数")
+```
+```{r}
+library(ggplot2)
+huawei_userinfo<-dbGetQuery(conn,"select *  from usertopics_bytopic where topic_name = '华为'")
+huawei_data<-huawei_userinfo["follower_count"][,1]
+res_cdf<- ecdf(huawei_data)
+huawei_x<-knots(res_cdf)
+huawei_y<-res_cdf(x)
+  
+```
+
+```{r}
+data<-cbind(huawei_x,huawei_y)
+data<-as.data.frame(data)
+ggplot()+geom_line(data,aes(x = data["huawei_x"],y = data["huawei_y"]))
+```
+
+
+```{r}
+xiaomi_userinfo<-dbGetQuery(conn,"select *  from usertopics_bytopic where topic_name = '小米科技'")
+data<-xiaomi_userinfo["follower_count"][,1]
+showCDF(data,"小米科技关注用户话题关注数")
+```
+
+
+数据准备
+```{r}
+userinfo<-dbGetQuery(conn,"select tu.topic_name, ui.id,ui.name, ui.answer_count,ui.question_count ,ui.voteup_count ,ui.thanked_count  ,ui.following_count,ui.follower_count,ui.following_question_count,ui.following_topic_count,ui.collected_count from userinfo as ui ,topic_users as tu where tu.user_id = ui.id ")
+
+```
+
+
+```{r}
+library(ggpubr)
+library(dplyr)
+df<-userinfo%>%
+  filter(topic_name %in% c("华为","小米科技"))
+
+ggboxplot(df, x="follower_count", add = "mean", rug = TRUE, color = "topic_name", fill = "topic_name", palette = c("#00AFBB", "#E7B800"))
+```
+
+```{r}
+gghistogram(df, x="follower_count", add = "mean", rug = TRUE, color = "topic_name", fill = "topic_name", palette = c("#00AFBB", "#E7B800"))
+```
+
+
+Add a new chunk by clicking the *Insert Chunk* button on the toolbar or by pressing *Ctrl+Alt+I*.
+
+When you save the notebook, an HTML file containing the code and output will be saved alongside it (click the *Preview* button or press *Ctrl+Shift+K* to preview the HTML file).

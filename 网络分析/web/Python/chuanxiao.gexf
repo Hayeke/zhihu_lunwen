@@ -1,0 +1,40 @@
+<?xml version='1.0' encoding='utf-8'?>
+<gexf version="1.1" xmlns="http://www.gexf.net/1.1draft" xmlns:viz="http://www.gexf.net/1.1draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.w3.org/2001/XMLSchema-instance">
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="0" title="modularity_class" type="long" />
+      <attribute id="1" title="size" type="long" />
+    </attributes>
+    <nodes>
+      <node id="1" label="jack">
+        <attvalues>
+          <attvalue for="0" value="3" />
+          <attvalue for="1" value="10" />
+        </attvalues>
+      </node>
+      <node id="2" label="wang">
+        <attvalues>
+          <attvalue for="0" value="4" />
+          <attvalue for="1" value="1" />
+        </attvalues>
+      </node>
+      <node id="3" label="li">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="10" />
+        </attvalues>
+      </node>
+      <node id="4" label="li">
+        <attvalues>
+          <attvalue for="0" value="1" />
+          <attvalue for="1" value="8" />
+        </attvalues>
+      </node>
+      <node id="jack" label="jack" />
+      <node id="wang" label="wang" />
+    </nodes>
+    <edges>
+      <edge id="0" source="jack" target="wang" weight="li" />
+    </edges>
+  </graph>
+</gexf>

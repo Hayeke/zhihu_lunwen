@@ -1,0 +1,1044 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<gexf xmlns="http://www.gexf.net/1.2draft" version="1.2" xmlns:viz="http://www.gexf.net/1.2draft/viz" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://www.gexf.net/1.2draft http://www.gexf.net/1.2draft/gexf.xsd">
+  <meta lastmodifieddate="2014-01-30">
+    <creator>Gephi 0.8.1</creator>
+    <description></description>
+  </meta>
+  <graph defaultedgetype="undirected" mode="static">
+    <attributes class="node" mode="static">
+      <attribute id="modularity_class" title="Modularity Class" type="float"></attribute>
+    </attributes>
+    <nodes>
+		<node id= "0" label="尚赫" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "1" label="天津权健足球俱乐部" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "2" label="黑茶" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "3" label="boss直聘" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "4" label="比特币 (Bitcoin)" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "5" label="锤子科技" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "6" label="康宝莱（Herbalife）" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "7" label="云在指尖" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "8" label="云数贸" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="2.58"> </viz:size>
+</node> 
+<node id= "9" label="7-Eleven" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "10" label="Nuskin如新" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="2.58"> </viz:size>
+</node> 
+<node id= "11" label="Saivian 塞比安" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="2.58"> </viz:size>
+</node> 
+<node id= "12" label="顺联动力" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "13" label="美乐家" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "14" label="天狮集团" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "15" label="安然纳米公司" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "16" label="完美（中国）有限公司" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "17" label="维卡币" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "18" label="盖网" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "19" label="我的未来网" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "20" label="思埠" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "21" label="玫琳凯" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "22" label="淘宝网" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "23" label="华林酸碱平（狻戬平）" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "24" label="北京罗麦" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "25" label="MBI/MFCClub骗局" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "26" label="香港亮碧思" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "27" label="国珍" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "28" label="MMM 类骗局" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="3.81"> </viz:size>
+</node> 
+<node id= "29" label="无限极" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="4.52"> </viz:size>
+</node> 
+<node id= "30" label="五行币" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "31" label="1040阳光工程（传销）" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="5.13"> </viz:size>
+</node> 
+<node id= "32" label="斗鱼直播" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "33" label="安利（Amway）" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="4.32"> </viz:size>
+</node> 
+<node id= "34" label="松花粉" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "35" label="中脉科技" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "36" label="798" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "37" label="三生中国" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "38" label="世界云联" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "39" label="戒色吧（百度贴吧）" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "40" label="星火草原" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "41" label="全能神（宗教）" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "42" label="泛亚有色金属交易所" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "43" label="陌陌" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "44" label="圣商大家族" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "45" label="葆婴" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "46" label="蚁力神" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "47" label="婕斯 Jeunesse" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="3.0"> </viz:size>
+</node> 
+<node id= "48" label="WV梦幻之旅" >
+<attvalues><attvalue for ="modularity_class"  value = "0.0"></attvalue ></attvalues>
+<viz:size value ="3.0"> </viz:size>
+</node> 
+<node id= "49" label="商业欺诈" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "50" label="心理辅导" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "51" label="面膜" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "52" label="便利店" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "53" label="微信营销" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "54" label="培训" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "55" label="美容健身" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "56" label="健身与减脂" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "57" label="淘宝刷单" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "58" label="返利模式" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "59" label="网上兼职" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "60" label="金融诈骗" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "61" label="变相传销" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="6.36"> </viz:size>
+</node> 
+<node id= "62" label="虚拟货币类骗局" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="3.81"> </viz:size>
+</node> 
+<node id= "63" label="直销" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="6.3"> </viz:size>
+</node> 
+<node id= "64" label="自愿连锁业(传销类)" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="4.09"> </viz:size>
+</node> 
+<node id= "65" label="网络营销" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "66" label="投资" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "67" label="微信朋友圈" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="3.0"> </viz:size>
+</node> 
+<node id= "68" label="保险" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "69" label="创业" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "70" label="金融" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="3.58"> </viz:size>
+</node> 
+<node id= "71" label="网络传销" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="3.7"> </viz:size>
+</node> 
+<node id= "72" label="非法集资" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "73" label="微商" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="4.86"> </viz:size>
+</node> 
+<node id= "74" label="庞氏骗局" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="4.52"> </viz:size>
+</node> 
+<node id= "75" label="保健品" >
+<attvalues><attvalue for ="modularity_class"  value = "1.0"></attvalue ></attvalues>
+<viz:size value ="4.25"> </viz:size>
+</node> 
+<node id= "76" label="员工激励" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "77" label="犯罪" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "78" label="钓鱼（广义的）" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "79" label="邪教" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="2.58"> </viz:size>
+</node> 
+<node id= "80" label="智商" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "81" label="社会心理学" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="3.0"> </viz:size>
+</node> 
+<node id= "82" label="反智主义" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "83" label="道德" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "84" label="企业管理" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "85" label="市场营销" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="3.91"> </viz:size>
+</node> 
+<node id= "86" label="违法" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "87" label="反传销" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="6.0"> </viz:size>
+</node> 
+<node id= "88" label="法律" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="5.39"> </viz:size>
+</node> 
+<node id= "89" label="欺骗" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "90" label="资本运作" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "91" label="洗脑" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="5.36"> </viz:size>
+</node> 
+<node id= "92" label="心理学现象" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "93" label="诈骗" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="5.21"> </viz:size>
+</node> 
+<node id= "94" label="黑社会" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "95" label="心理学" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="4.09"> </viz:size>
+</node> 
+<node id= "96" label="教育" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "97" label="骗子" >
+<attvalues><attvalue for ="modularity_class"  value = "2.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "98" label="广西" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="2.58"> </viz:size>
+</node> 
+<node id= "99" label="安徽" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "100" label="天津" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "101" label="金华" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "102" label="广西北海传销大本营" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "103" label="合肥" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "104" label="北京" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "105" label="南宁" >
+<attvalues><attvalue for ="modularity_class"  value = "3.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "106" label="陈安之" >
+<attvalues><attvalue for ="modularity_class"  value = "4.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "107" label="郎咸平" >
+<attvalues><attvalue for ="modularity_class"  value = "4.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "108" label="罗永浩" >
+<attvalues><attvalue for ="modularity_class"  value = "4.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "109" label="刘仲敬" >
+<attvalues><attvalue for ="modularity_class"  value = "4.0"></attvalue ></attvalues>
+<viz:size value ="0.0"> </viz:size>
+</node> 
+<node id= "110" label="李文星" >
+<attvalues><attvalue for ="modularity_class"  value = "4.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "111" label="李楠（人物）" >
+<attvalues><attvalue for ="modularity_class"  value = "4.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "112" label="医药" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "113" label="招聘网站" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "114" label="心理" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "115" label="健康" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "116" label="微信" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "117" label="教育培训机构" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "118" label="人际交往" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "119" label="电子商务" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.58"> </viz:size>
+</node> 
+<node id= "120" label="经济" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.58"> </viz:size>
+</node> 
+<node id= "121" label="药物" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "122" label="医学" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "123" label="销售" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "124" label="经济学" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "125" label="连锁经营" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "126" label="化妆品" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "127" label="互联网金融" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "128" label="商业" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="2.81"> </viz:size>
+</node> 
+<node id= "129" label="幼儿教育" >
+<attvalues><attvalue for ="modularity_class"  value = "5.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "130" label="家庭关系" >
+<attvalues><attvalue for ="modularity_class"  value = "6.0"></attvalue ></attvalues>
+<viz:size value ="2.0"> </viz:size>
+</node> 
+<node id= "131" label="打击传销" >
+<attvalues><attvalue for ="modularity_class"  value = "6.0"></attvalue ></attvalues>
+<viz:size value ="4.32"> </viz:size>
+</node> 
+<node id= "132" label="医学常识" >
+<attvalues><attvalue for ="modularity_class"  value = "6.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "133" label="法律常识" >
+<attvalues><attvalue for ="modularity_class"  value = "6.0"></attvalue ></attvalues>
+<viz:size value ="1.58"> </viz:size>
+</node> 
+<node id= "134" label="法律咨询" >
+<attvalues><attvalue for ="modularity_class"  value = "6.0"></attvalue ></attvalues>
+<viz:size value ="3.17"> </viz:size>
+</node> 
+<node id= "135" label="安全" >
+<attvalues><attvalue for ="modularity_class"  value = "6.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "136" label="大学生" >
+<attvalues><attvalue for ="modularity_class"  value = "7.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "137" label="父母" >
+<attvalues><attvalue for ="modularity_class"  value = "7.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "138" label="政府" >
+<attvalues><attvalue for ="modularity_class"  value = "7.0"></attvalue ></attvalues>
+<viz:size value ="2.32"> </viz:size>
+</node> 
+<node id= "139" label="程序员" >
+<attvalues><attvalue for ="modularity_class"  value = "7.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+<node id= "140" label="警察" >
+<attvalues><attvalue for ="modularity_class"  value = "7.0"></attvalue ></attvalues>
+<viz:size value ="3.17"> </viz:size>
+</node> 
+<node id= "141" label="家庭" >
+<attvalues><attvalue for ="modularity_class"  value = "7.0"></attvalue ></attvalues>
+<viz:size value ="3.0"> </viz:size>
+</node> 
+<node id= "142" label="老年人" >
+<attvalues><attvalue for ="modularity_class"  value = "7.0"></attvalue ></attvalues>
+<viz:size value ="1.0"> </viz:size>
+</node> 
+
+
+
+
+
+   </nodes>
+  <edges>
+<edge id= "0" source="87" target ="61" weight = "13"></edge >
+<edge id= "1" source="63" target ="29" weight = "11"></edge >
+<edge id= "2" source="88" target ="63" weight = "11"></edge >
+<edge id= "3" source="33" target ="63" weight = "10"></edge >
+<edge id= "4" source="61" target ="131" weight = "9"></edge >
+<edge id= "5" source="87" target ="31" weight = "8"></edge >
+<edge id= "6" source="63" target ="87" weight = "7"></edge >
+<edge id= "7" source="75" target ="63" weight = "7"></edge >
+<edge id= "8" source="64" target ="31" weight = "6"></edge >
+<edge id= "9" source="61" target ="31" weight = "5"></edge >
+<edge id= "10" source="75" target ="29" weight = "5"></edge >
+<edge id= "11" source="95" target ="91" weight = "5"></edge >
+<edge id= "12" source="63" target ="61" weight = "5"></edge >
+<edge id= "13" source="95" target ="87" weight = "5"></edge >
+<edge id= "14" source="87" target ="73" weight = "4"></edge >
+<edge id= "15" source="134" target ="87" weight = "4"></edge >
+<edge id= "16" source="75" target ="61" weight = "4"></edge >
+<edge id= "17" source="61" target ="73" weight = "4"></edge >
+<edge id= "18" source="91" target ="63" weight = "4"></edge >
+<edge id= "19" source="61" target ="71" weight = "4"></edge >
+<edge id= "20" source="88" target ="91" weight = "4"></edge >
+<edge id= "21" source="74" target ="28" weight = "4"></edge >
+<edge id= "22" source="131" target ="31" weight = "4"></edge >
+<edge id= "23" source="62" target ="25" weight = "3"></edge >
+<edge id= "24" source="74" target ="11" weight = "3"></edge >
+<edge id= "25" source="119" target ="61" weight = "3"></edge >
+<edge id= "26" source="21" target ="63" weight = "3"></edge >
+<edge id= "27" source="88" target ="33" weight = "3"></edge >
+<edge id= "28" source="85" target ="63" weight = "3"></edge >
+<edge id= "29" source="87" target ="131" weight = "3"></edge >
+<edge id= "30" source="74" target ="93" weight = "3"></edge >
+<edge id= "31" source="93" target ="61" weight = "3"></edge >
+<edge id= "32" source="93" target ="87" weight = "3"></edge >
+<edge id= "33" source="16" target ="63" weight = "3"></edge >
+<edge id= "34" source="93" target ="31" weight = "3"></edge >
+<edge id= "35" source="61" target ="62" weight = "3"></edge >
+<edge id= "36" source="33" target ="29" weight = "3"></edge >
+<edge id= "37" source="121" target ="75" weight = "3"></edge >
+<edge id= "38" source="74" target ="71" weight = "3"></edge >
+<edge id= "39" source="98" target ="31" weight = "3"></edge >
+<edge id= "40" source="88" target ="134" weight = "3"></edge >
+<edge id= "41" source="88" target ="31" weight = "3"></edge >
+<edge id= "42" source="123" target ="63" weight = "3"></edge >
+<edge id= "43" source="75" target ="122" weight = "3"></edge >
+<edge id= "44" source="91" target ="87" weight = "3"></edge >
+<edge id= "45" source="88" target ="29" weight = "3"></edge >
+<edge id= "46" source="66" target ="70" weight = "3"></edge >
+<edge id= "47" source="88" target ="87" weight = "3"></edge >
+<edge id= "48" source="67" target ="73" weight = "3"></edge >
+<edge id= "49" source="108" target ="5" weight = "2"></edge >
+<edge id= "50" source="96" target ="91" weight = "2"></edge >
+<edge id= "51" source="88" target ="140" weight = "2"></edge >
+<edge id= "52" source="141" target ="130" weight = "2"></edge >
+<edge id= "53" source="88" target ="135" weight = "2"></edge >
+<edge id= "54" source="54" target ="91" weight = "2"></edge >
+<edge id= "55" source="141" target ="87" weight = "2"></edge >
+<edge id= "56" source="88" target ="64" weight = "2"></edge >
+<edge id= "57" source="121" target ="122" weight = "2"></edge >
+<edge id= "58" source="88" target ="81" weight = "2"></edge >
+<edge id= "59" source="33" target ="81" weight = "2"></edge >
+<edge id= "60" source="65" target ="93" weight = "2"></edge >
+<edge id= "61" source="88" target ="133" weight = "2"></edge >
+<edge id= "62" source="120" target ="63" weight = "2"></edge >
+<edge id= "63" source="88" target ="61" weight = "2"></edge >
+<edge id= "64" source="71" target ="31" weight = "2"></edge >
+<edge id= "65" source="135" target ="81" weight = "2"></edge >
+<edge id= "66" source="71" target ="8" weight = "2"></edge >
+<edge id= "67" source="74" target ="72" weight = "2"></edge >
+<edge id= "68" source="120" target ="73" weight = "2"></edge >
+<edge id= "69" source="66" target ="93" weight = "2"></edge >
+<edge id= "70" source="95" target ="92" weight = "2"></edge >
+<edge id= "71" source="74" target ="61" weight = "2"></edge >
+<edge id= "72" source="77" target ="140" weight = "2"></edge >
+<edge id= "73" source="53" target ="73" weight = "2"></edge >
+<edge id= "74" source="114" target ="91" weight = "2"></edge >
+<edge id= "75" source="91" target ="29" weight = "2"></edge >
+<edge id= "76" source="63" target ="10" weight = "2"></edge >
+<edge id= "77" source="129" target ="61" weight = "2"></edge >
+<edge id= "78" source="85" target ="70" weight = "2"></edge >
+<edge id= "79" source="85" target ="93" weight = "2"></edge >
+<edge id= "80" source="85" target ="65" weight = "2"></edge >
+<edge id= "81" source="95" target ="63" weight = "2"></edge >
+<edge id= "82" source="74" target ="137" weight = "2"></edge >
+<edge id= "83" source="134" target ="63" weight = "2"></edge >
+<edge id= "84" source="85" target ="88" weight = "2"></edge >
+<edge id= "85" source="63" target ="15" weight = "2"></edge >
+<edge id= "86" source="85" target ="73" weight = "2"></edge >
+<edge id= "87" source="131" target ="71" weight = "2"></edge >
+<edge id= "88" source="131" target ="64" weight = "2"></edge >
+<edge id= "89" source="134" target ="133" weight = "2"></edge >
+<edge id= "90" source="130" target ="137" weight = "2"></edge >
+<edge id= "91" source="81" target ="61" weight = "2"></edge >
+<edge id= "92" source="81" target ="92" weight = "2"></edge >
+<edge id= "93" source="121" target ="29" weight = "2"></edge >
+<edge id= "94" source="9" target ="52" weight = "2"></edge >
+<edge id= "95" source="93" target ="25" weight = "2"></edge >
+<edge id= "96" source="93" target ="47" weight = "2"></edge >
+<edge id= "97" source="60" target ="28" weight = "2"></edge >
+<edge id= "98" source="93" target ="28" weight = "2"></edge >
+<edge id= "99" source="61" target ="103" weight = "2"></edge >
+<edge id= "100" source="112" target ="63" weight = "2"></edge >
+<edge id= "101" source="72" target ="71" weight = "2"></edge >
+<edge id= "102" source="90" target ="98" weight = "2"></edge >
+<edge id= "103" source="103" target ="31" weight = "2"></edge >
+<edge id= "104" source="115" target ="75" weight = "2"></edge >
+<edge id= "105" source="140" target ="134" weight = "2"></edge >
+<edge id= "106" source="3" target ="110" weight = "2"></edge >
+<edge id= "107" source="132" target ="23" weight = "2"></edge >
+<edge id= "108" source="87" target ="8" weight = "2"></edge >
+<edge id= "109" source="93" target ="91" weight = "2"></edge >
+<edge id= "110" source="28" target ="71" weight = "2"></edge >
+<edge id= "111" source="126" target ="61" weight = "2"></edge >
+<edge id= "112" source="87" target ="71" weight = "2"></edge >
+<edge id= "113" source="93" target ="57" weight = "2"></edge >
+<edge id= "114" source="61" target ="117" weight = "2"></edge >
+<edge id= "115" source="60" target ="62" weight = "1"></edge >
+<edge id= "116" source="91" target ="15" weight = "1"></edge >
+<edge id= "117" source="91" target ="7" weight = "1"></edge >
+<edge id= "118" source="91" target ="30" weight = "1"></edge >
+<edge id= "119" source="123" target ="10" weight = "1"></edge >
+<edge id= "120" source="91" target ="39" weight = "1"></edge >
+<edge id= "121" source="91" target ="82" weight = "1"></edge >
+<edge id= "122" source="91" target ="73" weight = "1"></edge >
+<edge id= "123" source="70" target ="44" weight = "1"></edge >
+<edge id= "124" source="60" target ="30" weight = "1"></edge >
+<edge id= "125" source="62" target ="19" weight = "1"></edge >
+<edge id= "126" source="91" target ="21" weight = "1"></edge >
+<edge id= "127" source="137" target ="28" weight = "1"></edge >
+<edge id= "128" source="77" target ="87" weight = "1"></edge >
+<edge id= "129" source="137" target ="71" weight = "1"></edge >
+<edge id= "130" source="137" target ="1" weight = "1"></edge >
+<edge id= "131" source="137" target ="87" weight = "1"></edge >
+<edge id= "132" source="137" target ="8" weight = "1"></edge >
+<edge id= "133" source="79" target ="39" weight = "1"></edge >
+<edge id= "134" source="79" target ="91" weight = "1"></edge >
+<edge id= "135" source="22" target ="43" weight = "1"></edge >
+<edge id= "136" source="70" target ="61" weight = "1"></edge >
+<edge id= "137" source="22" target ="59" weight = "1"></edge >
+<edge id= "138" source="22" target ="120" weight = "1"></edge >
+<edge id= "139" source="22" target ="73" weight = "1"></edge >
+<edge id= "140" source="91" target ="5" weight = "1"></edge >
+<edge id= "141" source="91" target ="60" weight = "1"></edge >
+<edge id= "142" source="133" target ="131" weight = "1"></edge >
+<edge id= "143" source="79" target ="78" weight = "1"></edge >
+<edge id= "144" source="123" target ="54" weight = "1"></edge >
+<edge id= "145" source="123" target ="6" weight = "1"></edge >
+<edge id= "146" source="133" target ="61" weight = "1"></edge >
+<edge id= "147" source="51" target ="20" weight = "1"></edge >
+<edge id= "148" source="88" target ="77" weight = "1"></edge >
+<edge id= "149" source="97" target ="49" weight = "1"></edge >
+<edge id= "150" source="97" target ="1" weight = "1"></edge >
+<edge id= "151" source="97" target ="63" weight = "1"></edge >
+<edge id= "152" source="88" target ="96" weight = "1"></edge >
+<edge id= "153" source="88" target ="138" weight = "1"></edge >
+<edge id= "154" source="88" target ="66" weight = "1"></edge >
+<edge id= "155" source="88" target ="131" weight = "1"></edge >
+<edge id= "156" source="88" target ="20" weight = "1"></edge >
+<edge id= "157" source="97" target ="17" weight = "1"></edge >
+<edge id= "158" source="88" target ="95" weight = "1"></edge >
+<edge id= "159" source="88" target ="73" weight = "1"></edge >
+<edge id= "160" source="88" target ="6" weight = "1"></edge >
+<edge id= "161" source="88" target ="99" weight = "1"></edge >
+<edge id= "162" source="2" target ="87" weight = "1"></edge >
+<edge id= "163" source="97" target ="7" weight = "1"></edge >
+<edge id= "164" source="88" target ="120" weight = "1"></edge >
+<edge id= "165" source="134" target ="71" weight = "1"></edge >
+<edge id= "166" source="72" target ="61" weight = "1"></edge >
+<edge id= "167" source="123" target ="33" weight = "1"></edge >
+<edge id= "168" source="79" target ="67" weight = "1"></edge >
+<edge id= "169" source="123" target ="29" weight = "1"></edge >
+<edge id= "170" source="134" target ="137" weight = "1"></edge >
+<edge id= "171" source="123" target ="91" weight = "1"></edge >
+<edge id= "172" source="134" target ="131" weight = "1"></edge >
+<edge id= "173" source="72" target ="28" weight = "1"></edge >
+<edge id= "174" source="134" target ="8" weight = "1"></edge >
+<edge id= "175" source="72" target ="11" weight = "1"></edge >
+<edge id= "176" source="72" target ="8" weight = "1"></edge >
+<edge id= "177" source="88" target ="123" weight = "1"></edge >
+<edge id= "178" source="88" target ="70" weight = "1"></edge >
+<edge id= "179" source="88" target ="125" weight = "1"></edge >
+<edge id= "180" source="88" target ="93" weight = "1"></edge >
+<edge id= "181" source="72" target ="87" weight = "1"></edge >
+<edge id= "182" source="77" target ="108" weight = "1"></edge >
+<edge id= "183" source="21" target ="29" weight = "1"></edge >
+<edge id= "184" source="77" target ="93" weight = "1"></edge >
+<edge id= "185" source="81" target ="91" weight = "1"></edge >
+<edge id= "186" source="59" target ="87" weight = "1"></edge >
+<edge id= "187" source="140" target ="93" weight = "1"></edge >
+<edge id= "188" source="140" target ="94" weight = "1"></edge >
+<edge id= "189" source="17" target ="62" weight = "1"></edge >
+<edge id= "190" source="124" target ="70" weight = "1"></edge >
+<edge id= "191" source="124" target ="93" weight = "1"></edge >
+<edge id= "192" source="124" target ="63" weight = "1"></edge >
+<edge id= "193" source="124" target ="18" weight = "1"></edge >
+<edge id= "194" source="93" target ="48" weight = "1"></edge >
+<edge id= "195" source="124" target ="74" weight = "1"></edge >
+<edge id= "196" source="124" target ="31" weight = "1"></edge >
+<edge id= "197" source="120" target ="70" weight = "1"></edge >
+<edge id= "198" source="120" target ="124" weight = "1"></edge >
+<edge id= "199" source="120" target ="114" weight = "1"></edge >
+<edge id= "200" source="93" target ="73" weight = "1"></edge >
+<edge id= "201" source="59" target ="61" weight = "1"></edge >
+<edge id= "202" source="59" target ="43" weight = "1"></edge >
+<edge id= "203" source="140" target ="133" weight = "1"></edge >
+<edge id= "204" source="140" target ="103" weight = "1"></edge >
+<edge id= "205" source="46" target ="19" weight = "1"></edge >
+<edge id= "206" source="46" target ="62" weight = "1"></edge >
+<edge id= "207" source="140" target ="31" weight = "1"></edge >
+<edge id= "208" source="140" target ="48" weight = "1"></edge >
+<edge id= "209" source="142" target ="72" weight = "1"></edge >
+<edge id= "210" source="142" target ="92" weight = "1"></edge >
+<edge id= "211" source="108" target ="86" weight = "1"></edge >
+<edge id= "212" source="65" target ="61" weight = "1"></edge >
+<edge id= "213" source="108" target ="91" weight = "1"></edge >
+<edge id= "214" source="65" target ="70" weight = "1"></edge >
+<edge id= "215" source="140" target ="67" weight = "1"></edge >
+<edge id= "216" source="65" target ="138" weight = "1"></edge >
+<edge id= "217" source="65" target ="73" weight = "1"></edge >
+<edge id= "218" source="65" target ="116" weight = "1"></edge >
+<edge id= "219" source="81" target ="63" weight = "1"></edge >
+<edge id= "220" source="81" target ="131" weight = "1"></edge >
+<edge id= "221" source="77" target ="86" weight = "1"></edge >
+<edge id= "222" source="93" target ="131" weight = "1"></edge >
+<edge id= "223" source="63" target ="37" weight = "1"></edge >
+<edge id= "224" source="58" target ="61" weight = "1"></edge >
+<edge id= "225" source="119" target ="70" weight = "1"></edge >
+<edge id= "226" source="119" target ="58" weight = "1"></edge >
+<edge id= "227" source="119" target ="63" weight = "1"></edge >
+<edge id= "228" source="125" target ="31" weight = "1"></edge >
+<edge id= "229" source="119" target ="116" weight = "1"></edge >
+<edge id= "230" source="125" target ="87" weight = "1"></edge >
+<edge id= "231" source="125" target ="131" weight = "1"></edge >
+<edge id= "232" source="125" target ="91" weight = "1"></edge >
+<edge id= "233" source="121" target ="87" weight = "1"></edge >
+<edge id= "234" source="83" target ="123" weight = "1"></edge >
+<edge id= "235" source="21" target ="61" weight = "1"></edge >
+<edge id= "236" source="79" target ="41" weight = "1"></edge >
+<edge id= "237" source="79" target ="109" weight = "1"></edge >
+<edge id= "238" source="93" target ="106" weight = "1"></edge >
+<edge id= "239" source="93" target ="60" weight = "1"></edge >
+<edge id= "240" source="93" target ="70" weight = "1"></edge >
+<edge id= "241" source="93" target ="137" weight = "1"></edge >
+<edge id= "242" source="81" target ="87" weight = "1"></edge >
+<edge id= "243" source="63" target ="86" weight = "1"></edge >
+<edge id= "244" source="63" target ="64" weight = "1"></edge >
+<edge id= "245" source="63" target ="13" weight = "1"></edge >
+<edge id= "246" source="63" target ="131" weight = "1"></edge >
+<edge id= "247" source="63" target ="73" weight = "1"></edge >
+<edge id= "248" source="63" target ="6" weight = "1"></edge >
+<edge id= "249" source="93" target ="62" weight = "1"></edge >
+<edge id= "250" source="63" target ="0" weight = "1"></edge >
+<edge id= "251" source="63" target ="1" weight = "1"></edge >
+<edge id= "252" source="63" target ="27" weight = "1"></edge >
+<edge id= "253" source="93" target ="18" weight = "1"></edge >
+<edge id= "254" source="93" target ="63" weight = "1"></edge >
+<edge id= "255" source="93" target ="59" weight = "1"></edge >
+<edge id= "256" source="124" target ="73" weight = "1"></edge >
+<edge id= "257" source="66" target ="124" weight = "1"></edge >
+<edge id= "258" source="88" target ="103" weight = "1"></edge >
+<edge id= "259" source="88" target ="115" weight = "1"></edge >
+<edge id= "260" source="49" target ="7" weight = "1"></edge >
+<edge id= "261" source="128" target ="63" weight = "1"></edge >
+<edge id= "262" source="128" target ="29" weight = "1"></edge >
+<edge id= "263" source="128" target ="74" weight = "1"></edge >
+<edge id= "264" source="128" target ="33" weight = "1"></edge >
+<edge id= "265" source="128" target ="61" weight = "1"></edge >
+<edge id= "266" source="128" target ="87" weight = "1"></edge >
+<edge id= "267" source="128" target ="24" weight = "1"></edge >
+<edge id= "268" source="128" target ="10" weight = "1"></edge >
+<edge id= "269" source="103" target ="71" weight = "1"></edge >
+<edge id= "270" source="61" target ="60" weight = "1"></edge >
+<edge id= "271" source="61" target ="45" weight = "1"></edge >
+<edge id= "272" source="61" target ="64" weight = "1"></edge >
+<edge id= "273" source="61" target ="111" weight = "1"></edge >
+<edge id= "274" source="61" target ="1" weight = "1"></edge >
+<edge id= "275" source="61" target ="8" weight = "1"></edge >
+<edge id= "276" source="61" target ="38" weight = "1"></edge >
+<edge id= "277" source="61" target ="11" weight = "1"></edge >
+<edge id= "278" source="61" target ="25" weight = "1"></edge >
+<edge id= "279" source="82" target ="15" weight = "1"></edge >
+<edge id= "280" source="87" target ="26" weight = "1"></edge >
+<edge id= "281" source="54" target ="61" weight = "1"></edge >
+<edge id= "282" source="54" target ="92" weight = "1"></edge >
+<edge id= "283" source="54" target ="81" weight = "1"></edge >
+<edge id= "284" source="14" target ="101" weight = "1"></edge >
+<edge id= "285" source="99" target ="140" weight = "1"></edge >
+<edge id= "286" source="99" target ="103" weight = "1"></edge >
+<edge id= "287" source="33" target ="64" weight = "1"></edge >
+<edge id= "288" source="33" target ="16" weight = "1"></edge >
+<edge id= "289" source="33" target ="47" weight = "1"></edge >
+<edge id= "290" source="33" target ="61" weight = "1"></edge >
+<edge id= "291" source="33" target ="87" weight = "1"></edge >
+<edge id= "292" source="135" target ="33" weight = "1"></edge >
+<edge id= "293" source="135" target ="87" weight = "1"></edge >
+<edge id= "294" source="14" target ="63" weight = "1"></edge >
+<edge id= "295" source="136" target ="118" weight = "1"></edge >
+<edge id= "296" source="100" target ="63" weight = "1"></edge >
+<edge id= "297" source="100" target ="110" weight = "1"></edge >
+<edge id= "298" source="100" target ="3" weight = "1"></edge >
+<edge id= "299" source="136" target ="63" weight = "1"></edge >
+<edge id= "300" source="136" target ="91" weight = "1"></edge >
+<edge id= "301" source="136" target ="110" weight = "1"></edge >
+<edge id= "302" source="136" target ="113" weight = "1"></edge >
+<edge id= "303" source="136" target ="102" weight = "1"></edge >
+<edge id= "304" source="136" target ="14" weight = "1"></edge >
+<edge id= "305" source="87" target ="64" weight = "1"></edge >
+<edge id= "306" source="87" target ="110" weight = "1"></edge >
+<edge id= "307" source="87" target ="23" weight = "1"></edge >
+<edge id= "308" source="75" target ="91" weight = "1"></edge >
+<edge id= "309" source="68" target ="70" weight = "1"></edge >
+<edge id= "310" source="68" target ="107" weight = "1"></edge >
+<edge id= "311" source="68" target ="63" weight = "1"></edge >
+<edge id= "312" source="68" target ="91" weight = "1"></edge >
+<edge id= "313" source="68" target ="29" weight = "1"></edge >
+<edge id= "314" source="68" target ="74" weight = "1"></edge >
+<edge id= "315" source="75" target ="97" weight = "1"></edge >
+<edge id= "316" source="75" target ="86" weight = "1"></edge >
+<edge id= "317" source="75" target ="93" weight = "1"></edge >
+<edge id= "318" source="75" target ="33" weight = "1"></edge >
+<edge id= "319" source="115" target ="63" weight = "1"></edge >
+<edge id= "320" source="75" target ="27" weight = "1"></edge >
+<edge id= "321" source="84" target ="76" weight = "1"></edge >
+<edge id= "322" source="127" target ="72" weight = "1"></edge >
+<edge id= "323" source="127" target ="70" weight = "1"></edge >
+<edge id= "324" source="127" target ="71" weight = "1"></edge >
+<edge id= "325" source="127" target ="61" weight = "1"></edge >
+<edge id= "326" source="127" target ="28" weight = "1"></edge >
+<edge id= "327" source="48" target ="11" weight = "1"></edge >
+<edge id= "328" source="28" target ="62" weight = "1"></edge >
+<edge id= "329" source="115" target ="61" weight = "1"></edge >
+<edge id= "330" source="115" target ="121" weight = "1"></edge >
+<edge id= "331" source="87" target ="48" weight = "1"></edge >
+<edge id= "332" source="122" target ="29" weight = "1"></edge >
+<edge id= "333" source="87" target ="11" weight = "1"></edge >
+<edge id= "334" source="87" target ="28" weight = "1"></edge >
+<edge id= "335" source="105" target ="64" weight = "1"></edge >
+<edge id= "336" source="105" target ="98" weight = "1"></edge >
+<edge id= "337" source="105" target ="31" weight = "1"></edge >
+<edge id= "338" source="112" target ="121" weight = "1"></edge >
+<edge id= "339" source="112" target ="134" weight = "1"></edge >
+<edge id= "340" source="112" target ="29" weight = "1"></edge >
+<edge id= "341" source="122" target ="63" weight = "1"></edge >
+<edge id= "342" source="104" target ="79" weight = "1"></edge >
+<edge id= "343" source="56" target ="55" weight = "1"></edge >
+<edge id= "344" source="104" target ="36" weight = "1"></edge >
+<edge id= "345" source="126" target ="63" weight = "1"></edge >
+<edge id= "346" source="126" target ="21" weight = "1"></edge >
+<edge id= "347" source="126" target ="67" weight = "1"></edge >
+<edge id= "348" source="69" target ="70" weight = "1"></edge >
+<edge id= "349" source="69" target ="125" weight = "1"></edge >
+<edge id= "350" source="69" target ="120" weight = "1"></edge >
+<edge id= "351" source="69" target ="32" weight = "1"></edge >
+<edge id= "352" source="69" target ="85" weight = "1"></edge >
+<edge id= "353" source="141" target ="28" weight = "1"></edge >
+<edge id= "354" source="141" target ="75" weight = "1"></edge >
+<edge id= "355" source="141" target ="1" weight = "1"></edge >
+<edge id= "356" source="92" target ="87" weight = "1"></edge >
+<edge id= "357" source="66" target ="63" weight = "1"></edge >
+<edge id= "358" source="66" target ="116" weight = "1"></edge >
+<edge id= "359" source="66" target ="10" weight = "1"></edge >
+<edge id= "360" source="131" target ="73" weight = "1"></edge >
+<edge id= "361" source="131" target ="1" weight = "1"></edge >
+<edge id= "362" source="131" target ="8" weight = "1"></edge >
+<edge id= "363" source="131" target ="25" weight = "1"></edge >
+<edge id= "364" source="50" target ="78" weight = "1"></edge >
+<edge id= "365" source="92" target ="61" weight = "1"></edge >
+<edge id= "366" source="95" target ="123" weight = "1"></edge >
+<edge id= "367" source="66" target ="62" weight = "1"></edge >
+<edge id= "368" source="95" target ="142" weight = "1"></edge >
+<edge id= "369" source="95" target ="81" weight = "1"></edge >
+<edge id= "370" source="95" target ="67" weight = "1"></edge >
+<edge id= "371" source="95" target ="100" weight = "1"></edge >
+<edge id= "372" source="95" target ="31" weight = "1"></edge >
+<edge id= "373" source="114" target ="63" weight = "1"></edge >
+<edge id= "374" source="114" target ="134" weight = "1"></edge >
+<edge id= "375" source="114" target ="141" weight = "1"></edge >
+<edge id= "376" source="114" target ="87" weight = "1"></edge >
+<edge id= "377" source="36" target ="79" weight = "1"></edge >
+<edge id= "378" source="113" target ="102" weight = "1"></edge >
+<edge id= "379" source="73" target ="12" weight = "1"></edge >
+<edge id= "380" source="80" target ="78" weight = "1"></edge >
+<edge id= "381" source="88" target ="75" weight = "1"></edge >
+<edge id= "382" source="88" target ="48" weight = "1"></edge >
+<edge id= "383" source="88" target ="28" weight = "1"></edge >
+<edge id= "384" source="89" target ="90" weight = "1"></edge >
+<edge id= "385" source="89" target ="63" weight = "1"></edge >
+<edge id= "386" source="89" target ="73" weight = "1"></edge >
+<edge id= "387" source="89" target ="98" weight = "1"></edge >
+<edge id= "388" source="34" target ="27" weight = "1"></edge >
+<edge id= "389" source="80" target ="97" weight = "1"></edge >
+<edge id= "390" source="80" target ="63" weight = "1"></edge >
+<edge id= "391" source="113" target ="110" weight = "1"></edge >
+<edge id= "392" source="80" target ="50" weight = "1"></edge >
+<edge id= "393" source="29" target ="61" weight = "1"></edge >
+<edge id= "394" source="29" target ="87" weight = "1"></edge >
+<edge id= "395" source="96" target ="79" weight = "1"></edge >
+<edge id= "396" source="96" target ="41" weight = "1"></edge >
+<edge id= "397" source="138" target ="72" weight = "1"></edge >
+<edge id= "398" source="138" target ="93" weight = "1"></edge >
+<edge id= "399" source="138" target ="64" weight = "1"></edge >
+<edge id= "400" source="138" target ="31" weight = "1"></edge >
+<edge id= "401" source="114" target ="68" weight = "1"></edge >
+<edge id= "402" source="73" target ="71" weight = "1"></edge >
+<edge id= "403" source="141" target ="67" weight = "1"></edge >
+<edge id= "404" source="130" target ="67" weight = "1"></edge >
+<edge id= "405" source="85" target ="96" weight = "1"></edge >
+<edge id= "406" source="85" target ="95" weight = "1"></edge >
+<edge id= "407" source="85" target ="6" weight = "1"></edge >
+<edge id= "408" source="85" target ="33" weight = "1"></edge >
+<edge id= "409" source="85" target ="27" weight = "1"></edge >
+<edge id= "410" source="85" target ="128" weight = "1"></edge >
+<edge id= "411" source="85" target ="118" weight = "1"></edge >
+<edge id= "412" source="130" target ="45" weight = "1"></edge >
+<edge id= "413" source="130" target ="73" weight = "1"></edge >
+<edge id= "414" source="130" target ="74" weight = "1"></edge >
+<edge id= "415" source="85" target ="34" weight = "1"></edge >
+<edge id= "416" source="130" target ="1" weight = "1"></edge >
+<edge id= "417" source="130" target ="61" weight = "1"></edge >
+<edge id= "418" source="130" target ="28" weight = "1"></edge >
+<edge id= "419" source="141" target ="93" weight = "1"></edge >
+<edge id= "420" source="141" target ="63" weight = "1"></edge >
+<edge id= "421" source="141" target ="137" weight = "1"></edge >
+<edge id= "422" source="141" target ="91" weight = "1"></edge >
+<edge id= "423" source="141" target ="134" weight = "1"></edge >
+<edge id= "424" source="141" target ="73" weight = "1"></edge >
+<edge id= "425" source="85" target ="29" weight = "1"></edge >
+<edge id= "426" source="85" target ="89" weight = "1"></edge >
+<edge id= "427" source="73" target ="20" weight = "1"></edge >
+<edge id= "428" source="74" target ="63" weight = "1"></edge >
+<edge id= "429" source="67" target ="53" weight = "1"></edge >
+<edge id= "430" source="67" target ="48" weight = "1"></edge >
+<edge id= "431" source="116" target ="51" weight = "1"></edge >
+<edge id= "432" source="116" target ="70" weight = "1"></edge >
+<edge id= "433" source="116" target ="124" weight = "1"></edge >
+<edge id= "434" source="116" target ="40" weight = "1"></edge >
+<edge id= "435" source="116" target ="20" weight = "1"></edge >
+<edge id= "436" source="116" target ="73" weight = "1"></edge >
+<edge id= "437" source="116" target ="61" weight = "1"></edge >
+<edge id= "438" source="74" target ="29" weight = "1"></edge >
+<edge id= "439" source="85" target ="120" weight = "1"></edge >
+<edge id= "440" source="74" target ="87" weight = "1"></edge >
+<edge id= "441" source="74" target ="127" weight = "1"></edge >
+<edge id= "442" source="74" target ="8" weight = "1"></edge >
+<edge id= "443" source="74" target ="31" weight = "1"></edge >
+<edge id= "444" source="102" target ="110" weight = "1"></edge >
+<edge id= "445" source="98" target ="64" weight = "1"></edge >
+<edge id= "446" source="129" target ="117" weight = "1"></edge >
+<edge id= "447" source="85" target ="123" weight = "1"></edge >
+<edge id= "448" source="85" target ="124" weight = "1"></edge >
+<edge id= "449" source="2" target ="61" weight = "1"></edge >
+
+  </edges>
+  </graph>
+</gexf>
